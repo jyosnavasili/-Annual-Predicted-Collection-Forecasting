@@ -39,3 +39,18 @@ Outcome:
 Achieved an accurate and reliable forecast of annual collections with an error margin of less than 5%.
 Enabled better financial planning and resource allocation, improving overall efficiency.
 Provided stakeholders with a clear and interactive visualization of predicted collections, enhancing decision-making capabilities.
+
+Example Dashboard Layout (Tableau)
+Historical Data Visualization:
+
+Line chart showing monthly collections over the past years.
+Seasonal decomposition plot to visualize trends, seasonality, and residuals.
+Forecast Visualization:
+
+Line chart showing the predicted collections for the next 12 months.
+Confidence intervals to indicate the uncertainty in predictions.
+Key Insights and Recommendations:
+
+Summary of forecast accuracy and key findings.
+Recommendations for financial planning based on forecasted collections.
+This project will demonstrate your ability to handle end-to-end data analysis, from data collection and preprocessing to model development and visualization. It also showcases your expertise in predictive modeling, ETL processes, and creating actionable insights for stakeholders.
