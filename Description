@@ -1,0 +1,41 @@
+Description:
+Developed a predictive model to forecast annual collections based on historical data, enabling better financial planning and decision-making.
+
+Technologies Used:
+
+Python (Pandas, Scikit-learn, Statsmodels)
+SQL
+ETL Tools (Apache Nifi, Airflow)
+Tableau
+Key Responsibilities:
+
+Data Collection and Preprocessing:
+
+Gathered historical collection data from multiple sources using Apache Nifi.
+Cleaned and preprocessed the data using Python (Pandas) to handle missing values, outliers, and inconsistencies.
+Stored the cleaned data in a SQL database for easy access and analysis.
+Exploratory Data Analysis (EDA):
+
+Conducted EDA to understand trends, seasonality, and patterns in the historical collection data.
+Visualized key metrics and insights using matplotlib and seaborn.
+Model Development:
+
+Developed multiple predictive models using Python (Scikit-learn, Statsmodels), including:
+Linear Regression
+ARIMA (AutoRegressive Integrated Moving Average)
+LSTM (Long Short-Term Memory) Neural Networks for time-series forecasting
+Evaluated model performance using metrics like Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared.
+Model Selection and Optimization:
+
+Selected the best-performing model based on evaluation metrics.
+Optimized the model by tuning hyperparameters and incorporating additional features (e.g., economic indicators, seasonal effects).
+Prediction and Visualization:
+
+Generated annual collection forecasts using the selected model.
+Created interactive Tableau dashboards to visualize historical data, model predictions, and confidence intervals.
+Provided actionable insights and recommendations based on the forecasted data.
+Outcome:
+
+Achieved an accurate and reliable forecast of annual collections with an error margin of less than 5%.
+Enabled better financial planning and resource allocation, improving overall efficiency.
+Provided stakeholders with a clear and interactive visualization of predicted collections, enhancing decision-making capabilities.
