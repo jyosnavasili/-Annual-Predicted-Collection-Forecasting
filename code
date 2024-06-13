@@ -1,0 +1,32 @@
+import pandas as pd
+from statsmodels.tsa.statespace.sarimax import SARIMAX
+import matplotlib.pyplot as plt
+
+# Load historical collection data
+data = pd.read_csv('collection_data.csv', parse_dates=['date'], index_col='date')
+
+# Preprocess data (handle missing values, outliers, etc.)
+data = data.fillna(method='ffill')
+
+# Exploratory Data Analysis
+data.plot(figsize=(12, 6))
+plt.title('Historical Collection Data')
+plt.show()
+
+# Define the SARIMA model
+model = SARIMAX(data['collection'], order=(1, 1, 1), seasonal_order=(1, 1, 1, 12))
+results = model.fit()
+
+# Forecast future collections
+forecast = results.get_forecast(steps=12)
+forecast_index = pd.date_range(start=data.index[-1], periods=12, freq='M')
+forecast_series = pd.Series(forecast.predicted_mean, index=forecast_index)
+
+# Plot the forecast
+plt.figure(figsize=(12, 6))
+plt.plot(data['collection'], label='Historical Data')
+plt.plot(forecast_series, label='Forecasted Collection', color='red')
+plt.fill_between(forecast_index, forecast.conf_int()['lower collection'], forecast.conf_int()['upper collection'], color='pink')
+plt.title('Annual Collection Forecast')
+plt.legend()
+plt.show()
